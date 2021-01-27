@@ -11,3 +11,7 @@ def main():
         response = requests.get(url)
         print(response)
         time.sleep(2)
+
+
+if __name__ == '__main__':
+    main()
