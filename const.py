@@ -11,6 +11,6 @@ UPDATE_ID_FILE_PATH = 'update_id'
 with open(UPDATE_ID_FILE_PATH) as file:
     UPDATE_ID = file.readline()
 
-CITY = 'Tula'
-WEATHER_TOKEN = 'c20ea049a76d07a8d39defb5b25de0a3'
-WEATHER_URL = f'api.openweathermap.org/data/2.5/weather?q={CITY}&appid={WEATHER_TOKEN}'
+
+WEATHER_TOKEN = 'b1355580cc28d49e90ed35a90ef7172d'
+WEATHER_URL = 'http://api.openweathermap.org/data/2.5/weather?q={city}&appid={token}'
