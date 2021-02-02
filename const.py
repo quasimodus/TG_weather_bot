@@ -9,8 +9,10 @@ MY_ID = 505372163
 UPDATE_ID_FILE_PATH = 'update_id'
 
 with open(UPDATE_ID_FILE_PATH) as file:
-    UPDATE_ID = file.readline()
-
+    data = file.readline()
+    if data:
+        data = int(data)
+    UPDATE_ID = data
 
 WEATHER_TOKEN = 'b1355580cc28d49e90ed35a90ef7172d'
 WEATHER_URL = 'http://api.openweathermap.org/data/2.5/weather?q={city}&appid={token}'
